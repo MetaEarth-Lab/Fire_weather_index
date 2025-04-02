@@ -1,0 +1,31 @@
+2025-04-01 17:39:40,545 - Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.12.9 | packaged by conda-forge | (main, Mar  4 2025, 22:48:41) [GCC 13.3.0]
+CUDA available: True
+CUDA_HOME: /usr/local/cuda-12.4
+NVCC: Build cuda_12.4.r12.4/compiler.33961263_0
+GPU 0: NVIDIA L40S
+GCC: gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-4)
+PyTorch: 2.6.0+cu124
+PyTorch compiling details: PyTorch built with:
+  - GCC 9.3
+  - C++ Version: 201703
+  - Intel(R) oneAPI Math Kernel Library Version 2024.2-Product Build 20240605 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 12.4
+  - NVCC architecture flags: -gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_90,code=sm_90
+  - CuDNN 90.1
+  - Magma 2.6.1
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CUDA_VERSION=12.4, CUDNN_VERSION=9.1.0, CXX_COMPILER=/opt/rh/devtoolset-9/root/usr/bin/c++, CXX_FLAGS= -D_GLIBCXX_USE_CXX11_ABI=0 -fabi-version=11 -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -O2 -fPIC -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-unused-parameter -Wno-strict-overflow -Wno-strict-aliasing -Wno-stringop-overflow -Wsuggest-override -Wno-psabi -Wno-error=old-style-cast -Wno-missing-braces -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=ON, USE_CUDNN=ON, USE_CUSPARSELT=1, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=1, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, 
+
+OpenCV: 4.11.0
+------------------------------------------------------------
+
+2025-04-01 17:39:40,545 - {'scenario': 'picontrol', 'base_path': '/lustre/home/eunhan/korea_downscaling_2km/picontrol2', 'mean_std_path': '../data/ISIMIP3b_picontrol2_1961_1990_ko_mean_std.pickle', 'res_dir': './checkpoint', 'gcms': ['IPSL-CM6A-LR'], 'topo_path': '/lustre/home/eunhan/korea_downscaling_2km/merit_dem/MERIT_DEM_0p50deg.nc', 'lmask_path': '/lustre/home/eunhan/korea_downscaling_2km/land_sea_mask/land_sea_mask_0p50deg.nc', 'train_years': range(1961, 1991), 'val_years': [1999], 'test_years': range(2000, 2015), 'batch_size': 8, 'val_batch_size': 8, 'config_file': './configs/picontrol.py', 'epochs': 30, 'ckpt_path': './checkpoint/picontrol/IPSL-CM6A-LR/liif_25.pt'}
+2025-04-01 17:39:41,008 - ------------------------------ load ckpt : ./checkpoint/picontrol/IPSL-CM6A-LR/liif_25.pt ------------------------------
+2025-04-01 17:39:41,019 - ------------------------------ Scenario : picontrol / GCM : IPSL-CM6A-LR ------------------------------
